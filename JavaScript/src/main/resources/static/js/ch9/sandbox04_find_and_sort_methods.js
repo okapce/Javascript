@@ -34,4 +34,6 @@ scores.sort((a,b) => {
 	}
 });
 
+scores.sort((a,b) => b.score - a.score);
+
 console.log(scores);

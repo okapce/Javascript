@@ -62,4 +62,25 @@ public class HomeController {
 		System.out.println("Running the ch9s01 demo");
 		return "ch9S01";
 	}
+	
+	@RequestMapping("/ch10s01")
+	//@ResponseBody	//views return only
+	public String showch10s01() {
+		System.out.println("Running the ch10s01 demo");
+		return "ch10S01";
+	}
+	
+	@RequestMapping("/ch11s01")
+	//@ResponseBody	//views return only
+	public String showch11s01() {
+		System.out.println("Running the ch11s01 demo");
+		return "ch11S01";
+	}
+	
+	@RequestMapping("/ch12s01")
+	//@ResponseBody	//views return only
+	public String showch12s01() {
+		System.out.println("Running the ch12s01 demo");
+		return "ch12S01";
+	}
 }
