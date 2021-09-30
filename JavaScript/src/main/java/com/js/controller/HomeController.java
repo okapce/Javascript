@@ -83,4 +83,11 @@ public class HomeController {
 		System.out.println("Running the ch12s01 demo");
 		return "ch12S01";
 	}
+	
+	@RequestMapping("/ch13s01")
+	//@ResponseBody	//views return only
+	public String showch13s01() {
+		System.out.println("Running the ch13s01 demo");
+		return "ch13S01";
+	}
 }
