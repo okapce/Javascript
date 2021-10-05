@@ -1,26 +1,24 @@
-const key = 'jykBm99doKNxNZNO5PaBr0LBUbjFaWyN';
-
-const getWeather = async (id) => {
-
-	const weatherApi = 'http://dataservice.accuweather.com/currentconditions/v1/';
-	const query  = `${id}?apikey=${key}`;
-	
-	const response = await fetch(weatherApi+query);
-	const data = await response.json();
-	
-	//console.log(data);
-	return data[0]; //returns a promise
-};
-
-const getCity = async (city) => {
-
-	const cityApi = 'http://dataservice.accuweather.com/locations/v1/cities/search';
-	const query = `?apikey=${key}&q=${city}`;
-	
-	const response = await fetch(cityApi+query);
-	const data = await response.json();
-	
-	return data[0]; //returns a promise
-};
+window.localStorage.setItem('name', 'mario');
+window.localStorage.setItem('age', '50');
 
 
+let name = localStorage.getItem('name');
+console.log(name);
+
+localStorage.setItem('name', 'luigi');
+
+name = localStorage.getItem('name');
+console.log(name);
+
+
+localStorage.removeItem('name');
+name = localStorage.getItem('name');
+console.log(name);
+
+//remove all
+localStorage.clear();
+
+name= localStorage.getItem('name');
+age = localStorage.getItem('age');
+
+console.log(name, age);
